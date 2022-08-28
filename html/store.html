@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <style>
+      a{
+    text-decoration: none;
+}
+
+#nav1{
+    display:flex;
+    
+}
+h2{
+    margin-left: 150px;
+    color:darkgoldenrod;
+    text-shadow: 20px;
+}
+img{
+    margin-right: 100px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .dropdown{
+    margin-left:30px;
+    margin-top: 10px;
+  }
+
+  
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+
+
+  #slider {
+    position: relative;
+    width: 60%;
+    height: 300px;
+   margin-left: 350px;
+   margin-top: 100px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+  #slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+  }
+  #slider ul li {
+    position: relative;
+    height: 100%;
+   
+    float: left;
+  }
+  #slider ul li img{
+    width: 500px;
+    height: 265px;
+  }
+   
+  #slider #prev, #slider #next {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+  }
+  #slider #prev:hover, #slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+  }
+  #slider #prev {
+    left: 10px;
+  }
+  #slider #next {
+    right: 10px;
+  }
+
+#search{
+  width: 200px;
+  height:40px;
+  margin-top: 15px;
+  margin-left: 60px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: Papyrus;
+  font-size: larger;
+}
+
+.hh1{
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 50px;
+  
+}
+
+
+img{
+  width:300px;
+  height:300px;
+}
+
+/* image sliders */
+
+.action{
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px 70px 5px 20px;
+  background: transparent;
+  height: 100%;
+  border-radius:15px;
+  text-align: center;
+  background-color: #555;
+}
+
+.item{
+  display:inline-block;
+}
+
+.item img {
+  margin-right:22px;
+}
+
+.logo{
+width: 150px;
+height: 50px;
+
+  
+}
+.as{
+  text-align: center;
+}
+.act{
+  font-family: sans-serif;
+  font-size: xx-large;
+  color: #555;
+  margin-left: 30px;
+}
+
+.more{
+  font-family: sans-serif;
+  font-size: larger;
+  color: white;
+  text-align: end;
+  
+}
+
+.shop{
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px 70px 5px 20px;
+  background: transparent;
+  height: 100%;
+  border-radius:15px;
+  text-align: center;
+  background-color: #555;
+}
+
+.item{
+  display:inline-block;
+}
+
+.item img {
+  margin-right:22px;
+}
+
+.btn1{
+width:100px;
+height:40px;
+background-color:#555;
+color:orange;
+
+
+}
+
+.all{
+  margin-left:10px;
+  margin-top:180px;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px 70px 5px 20px;
+  background: transparent;
+  height: 100%;
+  border-radius:15px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.ak{
+  text-align:center;
+  background-color:#555;
+ margin-left: 50px;
+ display:inline-block;
+}
+.btn1:hover{
+  background-color: white;
+  color: black;
+}
+.item:hover{
+  background-color: azure;
+}
+    </style>
+<script src="script.js"></script>
+    <title>
+        Anime Store
+    </title>
+
+</head>
+<body>
+    <div class="div1">
+        <nav id="nav1">
+           <a href="home.html"> <img src="logo.png" title="Mangaka.com" class="logo"> </a>
+            
+<a href="home.html" ><h2><strong>Home</strong></h2></a>
+<a href="manga.html" >  <h2><strong>Manga</strong></h2></a>
+<a href="store.html" ><h2><strong>Store</strong></h2></a>
+<input type="search" value="" id="search" placeholder="Search" onchange="search()">
+<div class="dropdown">
+    <button class="dropbtn">&#9776;</button>
+    <div class="dropdown-content">
+      <a href="#">About</a>
+      <a href="#">Contact us</a>
+      <button onclick="myFunction()">Dark mode</button>
+    </div>
+  </div>
+        </nav>
+        
+    </div>
+    <hr>
+    <h1 class="as">Welcome to my Anime store</h1>
+    <h3 class="act">Most Sold Items:</h3>
+<div class="shop">
+<div class="item 1">
+<a href=""><img src="access/s3.jpg"></a>
+<h3>Nezuko figure</h3>
+<button onclick="btn();" class="btn1">Buy now!</button>
+</div>
+<div class="item 2">
+<a href=""><img src="access/s1.jpg"></a>
+<h3>Naruto Head-band</h3>
+<button onclick="btn();" class="btn1">Buy now!</button>
+</div>
+
+<div class="item 3">
+  <a href=""><img src="hoodies/s1.jpg"></a>
+  <h3>Akatsuki Hoodie</h3>
+  <button onclick="btn();" class="btn1">Buy now!</button>
+  </div>
+
+  <div class="item 4">
+    <a href=""><img src="shirts/s4.jpg"></a>
+    <h3>Hentai T-shirt</h3>
+    <button onclick="btn();" class="btn1">Buy now!</button>
+    </div>
+
+    <div class="item 5">
+        <a href=""><img src="access/s4.jpg"></a>
+        <h3>AOT bagpack</h3>
+        <button onclick="btn();" class="btn1">Buy now!</button>
+        </div>
+</div>
+
+<h3 class="act">Anime Figures:</h3>
+<div class="shop">
+<div class="item 1">
+<a href=""><img src="access/s3.jpg"></a>
+<h3>Nezuko figure</h3>
+<h3>499</h3>
+<button onclick="btn();" class="btn1" id="btn1">Buy now!</button>
+</div>
+<div class="item 2">
+<a href=""><img src="access/Zero2.jpg"></a>
+<h3>Zero two Figure</h3>
+<h3>399</h3>
+<button onclick="btn();" class="btn1" id="btn2">Buy now!</button>
+</div>
+
+<div class="item 3">
+  <a href=""><img src="access/dsfigure.jpg"></a>
+  <h3>Demon Slayer figures  </h3>
+  <h3>899</h3>
+  <button onclick="btn();" class="btn1" id="btn3">Buy now!</button>
+  </div>
+
+  <div class="item 4">
+    <a href=""><img src="access/Himiko-Toga.jpg"></a>
+    <h3>Himiko Toga Figure</h3>
+    <h3>1499</h3>
+    <button onclick="btn();" class="btn1" id="btn4">Buy now!</button>
+    </div>
+
+    <div class="item 5">
+      <a href=""><img src="access/anyafigure.jpg"></a>
+      <h3>Anya Figure</h3>
+      <h3>550</h3>
+      <button onclick="btn();" class="btn1" id="btn5">Buy now!</button>
+      </div>
+
+      <div class="item 6">
+        <a href=""><img src="access/remfigure.jpg"></a>
+        <h3>Rem figure  </h3>
+        <h3>899</h3>
+        <button onclick="btn();" class="btn1" id="btn3">Buy now!</button>
+        </div>
+      
+        <div class="item 7">
+          <a href=""><img src="access/gokufigure.jpg"></a>
+          <h3>Goku Figure</h3>
+          <h3>1499</h3>
+          <button onclick="btn();" class="btn1" id="btn4">Buy now!</button>
+          </div>
+      
+          <div class="item 8">
+            <a href=""><img src="access/Yumeko.jpg"></a>
+            <h3>Yumeko Figure</h3>
+            <h3>550</h3>
+            <button onclick="btn();" class="btn1" id="btn5">Buy now!</button>
+            </div>
+
+        
+            
+            
+    </div>
+
+    </body>
+    </html>
